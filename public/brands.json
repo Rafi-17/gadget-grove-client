@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "brand_image": "https://i.ibb.co/8mWjjMD/apple-1.png",
+        "brand_name": "Apple"
+    },
+    {
+        "id": 2,
+        "brand_image": "https://i.ibb.co/KWBK5Ds/samsung-2.jpg",
+        "brand_name": "Samsung"
+    },
+    {
+        "id": 3,
+        "brand_image": "https://i.ibb.co/Gswm90W/oneplus.png",
+        "brand_name": "One Plus"
+    },
+    {
+        "id": 4,
+        "brand_image": "https://i.ibb.co/wC6fyD7/asus.png",
+        "brand_name": "Asus"
+    },
+    {
+        "id": 5,
+        "brand_image": "https://i.ibb.co/x3Tk7B4/lg.png",
+        "brand_name": "LG"
+    },
+    {
+        "id": 6,
+        "brand_image": "https://i.ibb.co/rv8qN3J/realme.png",
+        "brand_name": "Realme"
+    }
+]
