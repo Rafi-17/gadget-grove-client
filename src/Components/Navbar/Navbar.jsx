@@ -73,7 +73,7 @@ const Navbar = () => {
 
         <ul
           className={`md:grid md: grid-cols-3 lg:flex gap-3 lg:gap-6 text-center text-orange-500 font-semibold  md:text-lg bg-zinc-700 md:bg-inherit p-4 rounded-md order-last md:order-none absolute md:static right-7 duration-1000 ${
-            open ? "top-14" : "hidden"
+            open ? "top-8" : "hidden"
           }`}
         >
           {navLinks}
