@@ -38,22 +38,22 @@ const Router = createBrowserRouter([
             {
                 path:'/products/:brand',
                 element:<BrandProducts></BrandProducts>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.brand}`)   
+                loader:({params})=>fetch(`https://gadget-grove-server-6akwc9hg0-rafis-projects-8070ee7b.vercel.app/products/${params.brand}`)   
             },
             {
                 path:'/update/:brand/:_id',
                 element:<PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.brand}/${params._id}`)
+                loader:({params})=>fetch(`https://gadget-grove-server-6akwc9hg0-rafis-projects-8070ee7b.vercel.app/products/${params.brand}/${params._id}`)
             },
             {
                 path:'/details/:brand/:_id',
                 element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.brand}/${params._id}`)
+                loader:({params})=>fetch(`https://gadget-grove-server-6akwc9hg0-rafis-projects-8070ee7b.vercel.app/products/${params.brand}/${params._id}`)
             },
             {
                 path:'/cart',
                 element:<PrivateRoute><Cart></Cart></PrivateRoute>,
-                loader:()=>fetch(`http://localhost:5000/cart`)
+                loader:()=>fetch(`https://gadget-grove-server-6akwc9hg0-rafis-projects-8070ee7b.vercel.app/cart`)
             },
         ]
     }

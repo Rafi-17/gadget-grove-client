@@ -2,7 +2,7 @@ import { AiOutlineStar, AiTwotoneStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const UniqueBrandCard = ({product}) => {
-    const {name,brand, type, price, photo, description, rating, _id}= product;
+    const {name,brand, type, price, photo, rating, _id}= product;
     const ratingbar=[1,2,3,4,5];
     return (
         <div className="flex flex-col md:flex-row text-center md:text-left gap-2 md:gap-6 bg-slate-400 pl-6 pr-2 py-4 rounded-md">

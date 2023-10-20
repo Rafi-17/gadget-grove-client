@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const CartCard = ({product,products,setProducts}) => {
 
-    const {name,brand, type, price, photo, description, rating, _id}= product;
+    const {name,brand, type, price, photo, _id}= product;
 
     const handleDelete=id=>{
         console.log(id);
@@ -17,7 +16,7 @@ const CartCard = ({product,products,setProducts}) => {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/cart/${id}`,{
+                fetch(`https://gadget-grove-server-6akwc9hg0-rafis-projects-8070ee7b.vercel.app/cart/${id}`,{
                     method: 'DELETE',
                 })
                 .then(res=>res.json())

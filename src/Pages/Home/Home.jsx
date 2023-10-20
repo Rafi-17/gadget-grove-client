@@ -1,5 +1,3 @@
-import bg from '../../assets/brandBG.jpg'
-import bg1 from '../../assets/brandBg.jpeg'
 import Banner from "../../Components/Banner/Banner";
 import { useLoaderData } from "react-router-dom";
 import BrandCard from "../../Components/BrandCard/BrandCard";

@@ -23,7 +23,7 @@ const UpdateProduct = () => {
         const updatedUser={name, brand, type, photo, price, rating};
         console.log(updatedUser);
 
-        fetch(`http://localhost:5000/products/${brand}/${_id}`,{
+        fetch(`https://gadget-grove-server-6akwc9hg0-rafis-projects-8070ee7b.vercel.app/products/${brand}/${_id}`,{
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

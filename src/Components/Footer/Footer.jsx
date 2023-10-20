@@ -2,7 +2,7 @@ import logo from '../../assets/weblogo.png'
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-neutral text-neutral-content mt-10">
+        <footer className="footer p-10 bg-neutral text-neutral-content mt-10 max-w-[1640px] mx-auto">
             <aside>
                 <img src={logo} className="w-10 md:w-14 rounded-full" alt="" />
                 <p>Gadget Grove<br/>Providing reliable tech since 1992</p>

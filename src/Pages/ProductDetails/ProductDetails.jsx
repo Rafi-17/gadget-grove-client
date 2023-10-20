@@ -9,7 +9,7 @@ const ProductDetails = () => {
     const productDetails= {name,brand, type, price, photo, rating};
 
     const handleCart=()=>{
-        fetch('http://localhost:5000/cart',{
+        fetch('https://gadget-grove-server-6akwc9hg0-rafis-projects-8070ee7b.vercel.app/cart',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

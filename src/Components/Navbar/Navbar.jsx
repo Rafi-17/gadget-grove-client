@@ -7,6 +7,7 @@ import logo from '../../assets/weblogo.png'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [dark, setDark] = useState(false);
   const { user, logout, loading } = useContext(AuthContext);
 
   const handleLogout = () => {
@@ -56,14 +57,14 @@ const Navbar = () => {
       <li><NavLink to="/register" className={({ isActive, isPending }) =>isPending ? "pending": isActive ? "underline md:no-underline bg-inherit md:bg-slate-800 md:py-[6px] px-3 font-semibold rounded-md text-cyan-600 md:text-white" : "" }>Register</NavLink></li>
       {
         user && <>
-          <li><NavLink to="/cart" className={({ isActive, isPending }) =>isPending ? "pending": isActive ? "underline md:no-underline bg-inherit md:bg-purple-500 md:py-[6px] px-3 font-semibold rounded-md text-cyan-600 md:text-white" : "" }>Cart</NavLink></li>
+          <li><NavLink to="/cart" className={({ isActive, isPending }) =>isPending ? "pending": isActive ? "underline md:no-underline bg-inherit md:bg-slate-800 md:py-[6px] px-3 font-semibold rounded-md text-cyan-600 md:text-white" : "" }>Cart</NavLink></li>
         </>
       }
     </>
   );
 
   return (
-    <nav className="px-3 pb-12 shadow-lg bg-slate-700">
+    <nav className="px-3 pb-12 shadow-lg bg-slate-700 max-w-[1640px] mx-auto">
       <div className="flex justify-between items-center">
         <div className="flex items-center justify-center gap-1 md:gap-2">
             <img className="w-10 md:w-14 rounded-full" src={logo} alt="" />
@@ -101,6 +102,7 @@ const Navbar = () => {
               }
             </>
           }
+        <input onClick={()=>setDark(!dark)} type="checkbox" className="toggle ml-2" />
         </div>
 
         <div
