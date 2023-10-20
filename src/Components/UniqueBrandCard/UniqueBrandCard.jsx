@@ -13,8 +13,10 @@ const UniqueBrandCard = ({product}) => {
                 <h2 className="text-2xl md:text-4xl font-extrabold mb-2">{name}</h2>
                 <div className="mb-4">
                     <p className="text-lg md:text-2xl font-semibold mb-1"><span className="font-bold">Brand:</span> {brand}</p>
-                    <p className="text-lg md:text-2xl font-semibold"><span className="font-bold">Type: </span> {type}</p>
+                    <p className="text-lg md:text-2xl font-semibold mb-1"><span className="font-bold">Type: </span> {type}</p>
+                    <p className="text-lg md:text-xl font-semibold"><span className="font-bold">Price: </span> {price}</p>
                 </div>
+                
                 <div className="rating">
                     {
                         ratingbar.map((num,idx)=> rating>=num ? <span className="text-yellow-400" key={idx}><AiTwotoneStar></AiTwotoneStar></span> : <span key={idx}><AiOutlineStar className="outline-yellow-500"></AiOutlineStar></span>)
@@ -26,8 +28,8 @@ const UniqueBrandCard = ({product}) => {
                     <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" /> */}
                 </div>
                 <div className="mt-4">
-                    <Link to={`/details/${_id}`}><button className="bg-purple-500 rounded-md py-2 px-2 md:px-4 mr-2 md:mr-6 text-white font-bold">Details</button></Link>
-                    <Link to={`/update/${_id}`}><button className="bg-purple-500 rounded-md py-2 px-2 md:px-4 text-white font-bold">Update</button></Link>
+                    <Link to={`/details/${brand}/${_id}`}><button className="bg-purple-500 rounded-md py-2 px-2 md:px-4 mr-2 md:mr-6 text-white font-bold">Details</button></Link>
+                    <Link to={`/update/${brand}/${_id}`}><button className="bg-purple-500 rounded-md py-2 px-2 md:px-4 text-white font-bold">Update</button></Link>
                 </div>
             </div>
         </div>

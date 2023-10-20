@@ -52,7 +52,7 @@ const Navbar = () => {
           Add Product
         </NavLink>
       </li>
-      <li><NavLink to="/contact" className={({ isActive, isPending }) =>isPending ? "pending": isActive ? "underline md:no-underline bg-inherit md:bg-purple-500 md:py-[6px] px-3 font-semibold rounded-md text-cyan-600 md:text-white" : "" }>Contact</NavLink></li>
+      <li><NavLink to="/cart" className={({ isActive, isPending }) =>isPending ? "pending": isActive ? "underline md:no-underline bg-inherit md:bg-purple-500 md:py-[6px] px-3 font-semibold rounded-md text-cyan-600 md:text-white" : "" }>Cart</NavLink></li>
       <li><NavLink to="/register" className={({ isActive, isPending }) =>isPending ? "pending": isActive ? "underline md:no-underline bg-inherit md:bg-slate-800 md:py-[6px] px-3 font-semibold rounded-md text-cyan-600 md:text-white" : "" }>Register</NavLink></li>
       {
         user && <>
