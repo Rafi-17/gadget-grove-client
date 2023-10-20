@@ -29,7 +29,7 @@ const BrandProducts = () => {
     },[allBrand, brand, img1])
 
     return (
-        <div className="px-4 md:px-10 lg:px-20 mt-10">
+        <div className="px-4 md:px-10 mt-10 max-w-[1440px] mx-auto">
             <div className="carousel w-full mb-10" >
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src={img1} className="w-full h-[80vh]" />
@@ -53,16 +53,20 @@ const BrandProducts = () => {
                     </div>
                 </div> 
             </div>
-            <h2 className="text-center text-5xl font-bold text-orange-500 mb-10">Total Products: {products.length}</h2>
+            
             <div>
                {
                 products.length>0 ?
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    {
-                        products.map(product=><UniqueBrandCard key={product._id} product={product}></UniqueBrandCard>)
-                    }
-                </div> :
-                'No product available'
+                <div>
+                    <h2 className="text-center text-5xl font-bold text-orange-500 mb-10">Total Products: {products.length}</h2>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        {
+                            products.map(product=><UniqueBrandCard key={product._id} product={product}></UniqueBrandCard>)
+                        }
+                    </div> 
+                </div>
+                :
+                <h2 className="text-5xl font-extrabold text-center text-orange-500">Sorry! No available products..</h2>
                }
             </div>
         </div>

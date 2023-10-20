@@ -41,7 +41,7 @@ const AddProduct = () => {
     }
 
     return (
-        <div>
+        <div className="max-w-[1440px] mx-auto">
             <div className="bg-[#F4F3F0] px-4 md:px-0 md:w-3/4 mx-auto py-16">
                     <h2 className="text-3xl md:text-5xl text-[#374151] text-center font-bold mb-8">Add New Product</h2>
                     <form onSubmit={handleAddProduct} className='space-y-6'>

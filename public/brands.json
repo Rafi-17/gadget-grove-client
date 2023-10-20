@@ -27,17 +27,17 @@
         "id": 4,
         "brand_image": "https://i.ibb.co/wC6fyD7/asus.png",
         "brand_name": "Asus",
-        "slide1":"",
-        "slide2":"",
-        "slide3":""
+        "slide1":"https://i.ibb.co/SP13Mg2/p1.jpg",
+        "slide2":"https://i.ibb.co/59ZjyKL/p2.jpg",
+        "slide3":"https://i.ibb.co/PF3FncS/p3.webp"
     },
     {
         "id": 5,
         "brand_image": "https://i.ibb.co/x3Tk7B4/lg.png",
         "brand_name": "LG",
-        "slide1":"",
-        "slide2":"",
-        "slide3":""
+        "slide1":"https://i.ibb.co/f46tzBY/p1.jpg",
+        "slide2":"https://i.ibb.co/HBvbGVs/p2.webp",
+        "slide3":"https://i.ibb.co/g78CVy9/p3.png"
     },
     {
         "id": 6,

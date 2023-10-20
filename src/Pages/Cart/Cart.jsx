@@ -6,7 +6,7 @@ const Cart = () => {
     const cartProducts= useLoaderData;
     const [products,setProducts]=useState(cartProducts);
     return (
-        <div>
+        <div className="max-w-[1440px] mx-auto">
             <h2 className="text-center text-5xl font-bold text-orange-500 mb-10">Total Products: {products.length}</h2>
             <div>
                {
