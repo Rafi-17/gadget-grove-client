@@ -52,12 +52,11 @@ const Navbar = () => {
           Add Product
         </NavLink>
       </li>
-      <li><NavLink to="/cart" className={({ isActive, isPending }) =>isPending ? "pending": isActive ? "underline md:no-underline bg-inherit md:bg-purple-500 md:py-[6px] px-3 font-semibold rounded-md text-cyan-600 md:text-white" : "" }>Cart</NavLink></li>
+      
       <li><NavLink to="/register" className={({ isActive, isPending }) =>isPending ? "pending": isActive ? "underline md:no-underline bg-inherit md:bg-slate-800 md:py-[6px] px-3 font-semibold rounded-md text-cyan-600 md:text-white" : "" }>Register</NavLink></li>
       {
         user && <>
-          <li><NavLink to="/profile" className={({ isActive, isPending }) =>isPending ? "pending": isActive ? "underline md:no-underline bg-inherit md:bg-slate-800 md:py-[6px] px-3 font-semibold rounded-md text-cyan-600 md:text-white" : "" }>Profile</NavLink></li>
-          <li><NavLink to="/feedback" className={({ isActive, isPending }) =>isPending ? "pending": isActive ? "underline md:no-underline bg-inherit md:slate-800-500 md:py-[6px] px-3 font-semibold rounded-md text-cyan-600 md:text-white" : "" }>Feedback</NavLink></li>
+          <li><NavLink to="/cart" className={({ isActive, isPending }) =>isPending ? "pending": isActive ? "underline md:no-underline bg-inherit md:bg-purple-500 md:py-[6px] px-3 font-semibold rounded-md text-cyan-600 md:text-white" : "" }>Cart</NavLink></li>
         </>
       }
     </>
