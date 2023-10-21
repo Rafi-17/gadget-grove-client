@@ -1,8 +1,8 @@
 
 const ErrorPage = () => {
     return (
-        <div>
-            <div>Page not found!!</div>
+        <div className="h-screen flex justify-center items-center text-6xl text-orange-500 font-extrabold">
+            <div>Oopss! Page not found!!</div>
         </div>
     );
 };

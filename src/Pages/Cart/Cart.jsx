@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import CartCard from "../../Components/CartCard/CartCard";
 
 const Cart = () => {
-    const cartProducts= useLoaderData;
+    const cartProducts= useLoaderData();
     const [products,setProducts]=useState(cartProducts);
     return (
         <div className="max-w-[1440px] mx-auto">

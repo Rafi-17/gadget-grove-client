@@ -1,14 +1,25 @@
 import { Link, NavLink } from "react-router-dom";
 import { CiMenuKebab } from "react-icons/ci";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
 import logo from '../../assets/weblogo.png'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [dark, setDark] = useState(false);
   const { user, logout, loading } = useContext(AuthContext);
+  const [theme,setTheme]= useState('light')
+    useEffect(()=>{
+        if(theme==='dark'){
+            document.documentElement.classList.add('dark')
+        }
+        else{
+            document.documentElement.classList.remove('dark')
+        }
+    },[theme])
+    const handleThemeSwitch=()=>{
+        setTheme(theme==='dark'? 'light' : 'dark')
+    }
 
   const handleLogout = () => {
     logout()
@@ -102,7 +113,7 @@ const Navbar = () => {
               }
             </>
           }
-        <input onClick={()=>setDark(!dark)} type="checkbox" className="toggle ml-2" />
+          <input onClick={handleThemeSwitch} type="checkbox" className="toggle ml-2" />
         </div>
 
         <div

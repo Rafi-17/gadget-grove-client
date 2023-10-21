@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const FAQ = () => {
     return (
-        <div className="pt-20 px-6 md:px-10lg :px-20">
-            <h2 className="text-5xl font-extrabold text-center mb-4">FAQ on <span className="text-orange-500">Gadgets</span></h2>
-            <p className="text-center text-lg mb-12 text-cyan-950"><small>(Most asked questions)</small></p>
+        <div className="pt-20 px-6 md:px-10lg :px-20 dark:text-black">
+            <h2 className="text-5xl font-extrabold text-center mb-4 dark:text-white">FAQ on <span className="text-orange-500">Gadgets</span></h2>
+            <p className="text-center text-lg mb-12 text-cyan-950 dark:text-white"><small>(Frequently asked questions)</small></p>
             <div className="collapse collapse-arrow bg-base-200 mb-4">
                 <input type="radio" name="my-accordion-2" checked="checked" /> 
                 <div className="collapse-title text-xl font-medium">
