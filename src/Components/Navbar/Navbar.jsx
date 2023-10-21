@@ -26,7 +26,7 @@ const Navbar = () => {
       .then(() => {
         Swal.fire({
             title: 'Success!',
-            text: 'Logged in successfully',
+            text: 'Logged out successfully',
             icon:'success',
             confirmButtonText: 'Cool'
           })
@@ -88,9 +88,12 @@ const Navbar = () => {
           }`}
         >
           {navLinks}
+          {user? <li className="md:hidden">
+            <button onClick={handleLogout}>Logout</button>
+          </li> :
           <li className="md:hidden">
-            <Link to="/login">{user? 'Logout' : 'Login'}</Link>
-          </li>
+            <Link to="/login">Login</Link>
+          </li>}
         </ul>
         <div>
           {
