@@ -32,7 +32,7 @@ const ProductDetails = () => {
 
     return (
         <div className="bg-gray-200 min-h-[70vh] max-w-[1440px] mx-auto">
-            <div className="w-1/3 bg-gradient-to-r from-cyan-500 to-blue-500 py-6 mx-auto border-2 border-black mt-2">
+            <div className="px-2 lg:px-0 lg:w-1/3 bg-gradient-to-r from-cyan-500 to-blue-500 py-6 mx-auto border-2 border-black mt-2">
                 <div className=" pt-4 mb-6">
                     <img className="mx-auto w-[225px] h-[225px]" src={photo} alt="" />
                 </div>

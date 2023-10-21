@@ -1,8 +1,14 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 
 const BrandCard = ({brand}) => {
+    const{loading} =useContext(AuthContext);
     const {brand_name,brand_image}= brand;
+    if(loading){
+        return <span className="loading loading-spinner loading-lg"></span>
+    }
 
     return (
         <Link to={`/products/${brand_name}`}>
