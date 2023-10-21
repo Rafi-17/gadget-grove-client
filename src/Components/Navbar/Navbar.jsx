@@ -89,7 +89,7 @@ const Navbar = () => {
         >
           {navLinks}
           <li className="md:hidden">
-            <Link to="/login">Login</Link>
+            <Link to="/login">{user? 'Logout' : 'Login'}</Link>
           </li>
         </ul>
         <div>
