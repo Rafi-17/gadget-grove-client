@@ -21,7 +21,7 @@ const Router = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader:()=>fetch('../brands.json')
+                loader:()=>fetch('../../public/brands.json')
             },
             {
                 path:'/register',
