@@ -18,7 +18,7 @@ const AddProduct = () => {
         const newUser={name, brand, type, photo, price, description, rating};
         console.log(newUser);
 
-        fetch('https://gadget-grove-server-6akwc9hg0-rafis-projects-8070ee7b.vercel.app/products',{
+        fetch('https://gadget-grove-server-ckwgesptd-rafis-projects-8070ee7b.vercel.app/products',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

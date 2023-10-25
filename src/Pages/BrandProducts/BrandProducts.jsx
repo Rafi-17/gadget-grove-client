@@ -33,9 +33,9 @@ const BrandProducts = () => {
         setimg3(selectedBrand?.slide3)
         console.log(img1);
     },[allBrand, brand, img1])
-    if(loading){
-        return <span className="loading loading-spinner loading-lg"></span>
-    }
+    // if(loading){
+    //     return <span className="loading loading-spinner loading-lg"></span>
+    // }
 
     return (
         

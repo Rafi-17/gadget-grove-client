@@ -38,17 +38,17 @@ const Router = createBrowserRouter([
             {
                 path:'/products/:brand',
                 element:<BrandProducts></BrandProducts>,
-                loader:({params})=>fetch(`https://gadget-grove-server-6akwc9hg0-rafis-projects-8070ee7b.vercel.app/products/${params.brand}`)   
+                loader:({params})=>fetch(`https://gadget-grove-server-ckwgesptd-rafis-projects-8070ee7b.vercel.app/products/${params.brand}`)   
             },
             {
                 path:'/update/:brand/:_id',
                 element:<PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-                loader:({params})=>fetch(`https://gadget-grove-server-6akwc9hg0-rafis-projects-8070ee7b.vercel.app/products/${params.brand}/${params._id}`)
+                loader:({params})=>fetch(`https://gadget-grove-server-ckwgesptd-rafis-projects-8070ee7b.vercel.app/products/${params.brand}/${params._id}`)
             },
             {
                 path:'/details/:brand/:_id',
                 element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-                loader:({params})=>fetch(`https://gadget-grove-server-6akwc9hg0-rafis-projects-8070ee7b.vercel.app/products/${params.brand}/${params._id}`)
+                loader:({params})=>fetch(`https://gadget-grove-server-ckwgesptd-rafis-projects-8070ee7b.vercel.app/products/${params.brand}/${params._id}`)
             },
             {
                 path:'/cart',
