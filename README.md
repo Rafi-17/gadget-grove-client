@@ -1,8 +1,7 @@
-# React + Vite
+## Live site- https://gadget-grove-7e7f4.web.app/
+# Project Features
+-  Users can view products based on companies and also know about many unknowns of different types of gadgets
+- Implemented authentication system using firebase. So users can make account and login to the account to view details of any product or add new product
+- Website is responsive and user friendly also in tablet and small devices.
+- Implemented dark mode in the website. Users can switch between dark and light theme.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
